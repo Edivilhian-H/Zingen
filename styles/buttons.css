@@ -1,15 +1,14 @@
 .btn {
   --btn-bg-color: var(--text-color-primary);
   --btn-color: var(--bg-color);
-
   border: 0;
-  border-radius: 0.5rem;
-  background-color: transparent;
 
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
+
+  border-radius: 0.5rem;
 
   font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
   cursor: pointer;
@@ -46,13 +45,13 @@
   font-size: 1.125rem;
 }
 
-.bnt[aria-label=] {
+.btn[aria-label] {
   position: relative;
   &::before {
     content: "";
     position: absolute;
     border-radius: inherit;
-    inset: 0.09375rem;
+    inset: 1px;
     background-color: var(--bg-color);
   }
   &::after {
@@ -67,8 +66,6 @@
 }
 
 @media (width >= 80em) {
-
-
   .btn-sm {
     padding: 0.75rem 1.5rem;
     font-size: var(--fs-base);
